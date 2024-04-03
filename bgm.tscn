@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://jnbxyj61v5fx"]
+
+[ext_resource type="AudioStream" uid="uid://ddma2yvpoi6uq" path="res://assets/sfx/OST School of Lock [Nauts]NIKKE GODDESS OF VICTORY.mp3" id="1_h2csl"]
+
+[node name="BGM" type="AudioStreamPlayer"]
+stream = ExtResource("1_h2csl")
+volume_db = -10.0
+autoplay = true

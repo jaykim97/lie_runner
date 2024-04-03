@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://fgribmap6qdj"]
+
+[ext_resource type="Texture2D" uid="uid://c2rhxui4qyv84" path="res://assets/background/1.png" id="1_p86qt"]
+[ext_resource type="Texture2D" uid="uid://dv5xpb2mnwsxb" path="res://assets/background/2.png" id="2_c85g7"]
+[ext_resource type="Texture2D" uid="uid://dvk3o1r0rqwvu" path="res://assets/background/3.png" id="3_mq7qu"]
+[ext_resource type="Texture2D" uid="uid://c2k25vv3rq5i4" path="res://assets/background/4.png" id="4_w242b"]
+[ext_resource type="Texture2D" uid="uid://bpans3w1i1h16" path="res://assets/background/5.png" id="5_rk4ed"]
+[ext_resource type="Texture2D" uid="uid://bhdo6flu8826l" path="res://assets/tiles/tile.png" id="6_jvy6k"]
+
+[node name="BG" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_p86qt")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.3, 1)
+motion_mirroring = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture = ExtResource("2_c85g7")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+texture = ExtResource("3_mq7qu")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+texture = ExtResource("4_w242b")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+texture = ExtResource("5_rk4ed")
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer5"]
+position = Vector2(576, 316)
+texture = ExtResource("6_jvy6k")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://b4wlwg4ddf3d3"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_5872g"]
+[ext_resource type="PackedScene" uid="uid://fgribmap6qdj" path="res://bg.tscn" id="1_v2f85"]
+[ext_resource type="PackedScene" uid="uid://cr70e0d0vu1nh" path="res://player.tscn" id="2_1lfp5"]
+[ext_resource type="PackedScene" uid="uid://cq4ysdbk6v5le" path="res://ground.tscn" id="2_oqtti"]
+[ext_resource type="PackedScene" uid="uid://sya00ua0cwj5" path="res://ground_rapture.tscn" id="4_ew23k"]
+[ext_resource type="PackedScene" uid="uid://cdhbkn3k1epyg" path="res://hud.tscn" id="6_e5tgm"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_5872g")
+
+[node name="BG" parent="." instance=ExtResource("1_v2f85")]
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, 0, 0)
+
+[node name="ground" parent="." instance=ExtResource("2_oqtti")]
+scale = Vector2(2, 2)
+
+[node name="Player" parent="." instance=ExtResource("2_1lfp5")]
+position = Vector2(78, 567)
+scale = Vector2(3, 3)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="ground_rapture" parent="." instance=ExtResource("4_ew23k")]
+position = Vector2(415, 513)
+scale = Vector2(2, 2)
+
+[node name="HUD" parent="." instance=ExtResource("6_e5tgm")]
